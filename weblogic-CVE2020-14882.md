@@ -12,7 +12,7 @@ https://mp.weixin.qq.com/s/_zNr5Jw7tH_6XlUdudhMhA
 因为com.tangosol.coherence.mvel2.sh.ShellSession这个gadget，只存在于weblogic 12，weblogic10 并没有这个gadget（没有包），所以无法使用
 ```
 
-![image-20201030215623287](https://github.com/yshdxm/POC-/blob/main/img/image-20201030215623287.png)
+![image-20201030215623287](/img/image-20201030215623287.png)
 
 需要使用`com.bea.core.repackaged.springframework.context.support.FileSystemXmlApplicationContext`
 
