@@ -136,13 +136,13 @@ poc.xml 如下
 
 结果：
 
-![image-20201118175217086](img\image-20201118175217086.png)
+![image-20201118175217086](/img/image-20201118175217086.png)
 
 写入文件成功，而且杀软不拦截
 
 Shell连接：
 
-![image-20201118175436535](img\image-20201118175436535.png)
+![image-20201118175436535](/img/image-20201118175436535.png)
 
 #### 方法二：powershell base64 写文件
 
@@ -151,7 +151,7 @@ $data = 'PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='
 [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($data))
 ```
 
-![image-20201118175909467](\img\image-20201118175909467.png)
+![image-20201118175909467](/img/image-20201118175909467.png)
 
 但是本地试了下 冰鞋的马写入解码的时候会自动换行，造成无法解析，目前没搜到解决方法
 
@@ -161,7 +161,7 @@ $data = 'PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='
 
 先准备冰鞋的jspx的马 然后在burp的encode模块进行base64编码
 
-![image-20201118181827462](D:\学习资料\markdown笔记\img\image-20201118181827462.png)
+![image-20201118181827462](/img/image-20201118181827462.png)
 
 将base64编码后的马写入 txt内
 
@@ -199,7 +199,7 @@ Poc3.xml
 </beans> 
 ```
 
-![image-20201118182130772](\img\image-20201118182130772.png)
+![image-20201118182130772](/img/image-20201118182130772.png)
 
 使用冰鞋连接正常 http://192.168.42.101:7001/console/images/xxx.jspx
 
@@ -287,11 +287,11 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-![image-20201102144406997](\img\image-20201102144406997.png)
+![image-20201102144406997](/img/image-20201102144406997.png)
 
 #### 写文件：
 
-![image-20201102145953121](\img\image-20201102145953121.png)
+![image-20201102145953121](/img/image-20201102145953121.png)
 
 
 
